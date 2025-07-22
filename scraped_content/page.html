@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<script type="text/javascript" src="//api.wukongtongji.com/c?_=805796785577570304" async></script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+  <title>三角洲随机装备系统</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- 背景音乐 -->
+  <audio id="bgMusic" loop preload="auto">
+    <source src="music.mp3" type="audio/mpeg">
+    您的浏览器不支持音频播放。
+  </audio>
+
+  <!-- 音频控制按钮 -->
+  <div class="audio-control">
+    <button id="audioBtn" class="audio-btn">
+      <span class="audio-icon">🔊</span>
+    </button>
+    <button id="volumeBtn" class="volume-btn">
+      <span class="volume-icon">🔊</span>
+    </button>
+    <div class="audio-status">手动播放音乐</div>
+  </div>
+
+  <!-- 四周装饰图片 -->
+  <div class="corner-decoration top-left">
+    <img src="emo/Camera_1040g3k031ipu0l261a605p9npmugru1ag93e1v0.jpg" alt="装饰">
+  </div>
+  <div class="corner-decoration top-right">
+    <img src="emo/Camera_XHS_17529143003481040g00831j51btdaiu6g5pmj.jpg" alt="装饰">
+  </div>
+  <div class="corner-decoration bottom-left">
+    <img src="emo/Camera_1040g3k031c7vvea10s005ovk1lg43s3n793uns8.jpg" alt="装饰">
+  </div>
+  <div class="corner-decoration bottom-right">
+    <img src="emo/Camera_XHS_17529143165401040g008316eb67vhha005pg2.jpg" alt="装饰">
+  </div>
+
+  <div class="container">
+    <h1 class="title">🎯 三角洲随机装备系统 🎯</h1>
+
+    <div class="lottery-section">
+      <div class="lottery-row top">
+        <div class="lottery-box">
+          <h2>🗺️ 地图</h2>
+          <div class="slot-machine">
+            <div class="slot-container" id="slot1">
+              <div class="slot-item">
+                <img src="map/1.jpg" alt="绝密航天">
+              </div>
+              <div class="slot-item">
+                <img src="map/2.jpg" alt="机密航天">
+              </div>
+              <div class="slot-item">
+                <img src="map/3.jpg" alt="绝密监狱">
+              </div>
+              <div class="slot-item">
+                <img src="map/4.jpg" alt="绝密巴克什">
+              </div>
+              <div class="slot-item">
+                <img src="map/5.jpg" alt="机密巴克什">
+              </div>
+              <div class="slot-item">
+                <img src="map/6.jpg" alt="机密长弓">
+              </div>
+              <div class="slot-item">
+                <img src="map/7.jpg" alt="机密大坝">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lottery-box">
+          <h2>👤 人物</h2>
+          <div class="slot-machine">
+            <div class="slot-container" id="slot5">
+              <div class="slot-item">
+                <img src="character/疾风.jpg" alt="疾风">
+              </div>
+              <div class="slot-item">
+                <img src="character/无名.jpg" alt="无名">
+              </div>
+              <div class="slot-item">
+                <img src="character/牧羊人.jpg" alt="牧羊人">
+              </div>
+              <div class="slot-item">
+                <img src="character/露娜.jpg" alt="露娜">
+              </div>
+              <div class="slot-item">
+                <img src="character/蛊.jpg" alt="蛊">
+              </div>
+              <div class="slot-item">
+                <img src="character/乌鲁鲁.jpg" alt="乌鲁鲁">
+              </div>
+              <div class="slot-item">
+                <img src="character/威龙.jpg" alt="威龙">
+              </div>
+              <div class="slot-item">
+                <img src="character/深蓝.jpg" alt="深蓝">
+              </div>
+              <div class="slot-item">
+                <img src="character/红狼.jpg" alt="红狼">
+              </div>
+              <div class="slot-item">
+                <img src="character/蜂医.jpg" alt="蜂医">
+              </div>
+              <div class="slot-item">
+                <img src="character/麦晓雯.jpg" alt="麦晓雯">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="lottery-row bottom">
+        <div class="lottery-box">
+          <h2>🔫 枪械</h2>
+          <div class="slot-machine">
+            <div class="slot-container" id="slot2">
+              <div class="slot-item">
+                <img src="gang/AKM突击步枪.jpg" alt="AKM突击步枪">
+              </div>
+              <div class="slot-item">
+                <img src="gang/M4A1突击步枪.jpg" alt="M4A1突击步枪">
+              </div>
+              <div class="slot-item">
+                <img src="gang/K416突击步枪.jpg" alt="K416突击步枪">
+              </div>
+              <div class="slot-item">
+                <img src="gang/QBZ95-1突击步枪.jpg" alt="QBZ95-1突击步枪">
+              </div>
+              <div class="slot-item">
+                <img src="gang/AKS-74U突击步枪.jpg" alt="AKS-74U突击步枪">
+              </div>
+              <div class="slot-item">
+                <img src="gang/ASh-12战斗步枪.jpg" alt="ASh-12战斗步枪">
+              </div>
+              <div class="slot-item">
+                <img src="gang/M16A4突击步枪.jpg" alt="M16A4突击步枪">
+              </div>
+              <div class="slot-item">
+                <img src="gang/AUG突击步枪.jpg" alt="AUG突击步枪">
+              </div>
+              <div class="slot-item">
+                <img src="gang/M7战斗步枪.jpg" alt="M7战斗步枪">
+              </div>
+              <div class="slot-item">
+                <img src="gang/SG552突击步枪.jpg" alt="SG552突击步枪">
+              </div>
+              <div class="slot-item">
+                <img src="gang/AK-12突击步枪.jpg" alt="AK-12突击步枪">
+              </div>
+              <div class="slot-item">
+                <img src="gang/SCAR-H突击步枪.jpg" alt="SCAR-H突击步枪">
+              </div>
+              <div class="slot-item">
+                <img src="gang/G3战斗步枪.jpg" alt="G3战斗步枪">
+              </div>
+              <div class="slot-item">
+                <img src="gang/PTR-32突击步枪.jpg" alt="PTR-32突击步枪">
+              </div>
+              <div class="slot-item">
+                <img src="gang/CAR-15突击步枪.jpg" alt="CAR-15突击步枪">
+              </div>
+              <div class="slot-item">
+                <img src="gang/AS Val突击步枪.jpg" alt="AS Val突击步枪">
+              </div>
+              <div class="slot-item">
+                <img src="gang/腾龙突击步枪.jpg" alt="腾龙突击步枪">
+              </div>
+              <div class="slot-item">
+                <img src="gang/K437突击步枪.jpg" alt="K437突击步枪">
+              </div>
+              <div class="slot-item">
+                <img src="gang/KC17突击步枪.jpg" alt="KC17突击步枪">
+              </div>
+              <div class="slot-item">
+                <img src="gang/P90冲锋枪.jpg" alt="P90冲锋枪">
+              </div>
+              <div class="slot-item">
+                <img src="gang/MP5冲锋枪.jpg" alt="MP5冲锋枪">
+              </div>
+              <div class="slot-item">
+                <img src="gang/UZI冲锋枪.jpg" alt="UZI冲锋枪">
+              </div>
+              <div class="slot-item">
+                <img src="gang/Vector冲锋枪.jpg" alt="Vector冲锋枪">
+              </div>
+              <div class="slot-item">
+                <img src="gang/野牛冲锋枪.jpg" alt="野牛冲锋枪">
+              </div>
+              <div class="slot-item">
+                <img src="gang/SMG-45冲锋枪.jpg" alt="SMG-45冲锋枪">
+              </div>
+              <div class="slot-item">
+                <img src="gang/SR-3M紧凑突击步枪.jpg" alt="SR-3M紧凑突击步枪">
+              </div>
+              <div class="slot-item">
+                <img src="gang/勇士冲锋枪.jpg" alt="勇士冲锋枪">
+              </div>
+              <div class="slot-item">
+                <img src="gang/MP7冲锋枪.jpg" alt="MP7冲锋枪">
+              </div>
+              <div class="slot-item">
+                <img src="gang/QCQ171冲锋枪.jpg" alt="QCQ171冲锋枪">
+              </div>
+              <div class="slot-item">
+                <img src="gang/M1014霰弹枪.jpg" alt="M1014霰弹枪">
+              </div>
+              <div class="slot-item">
+                <img src="gang/S12K霰弹枪.jpg" alt="S12K霰弹枪">
+              </div>
+              <div class="slot-item">
+                <img src="gang/M870霰弹枪.jpg" alt="M870霰弹枪">
+              </div>
+              <div class="slot-item">
+                <img src="gang/725双管霰弹枪.jpg" alt="725双管霰弹枪">
+              </div>
+              <div class="slot-item">
+                <img src="gang/PKM通用机枪.jpg" alt="PKM通用机枪">
+              </div>
+              <div class="slot-item">
+                <img src="gang/M249轻机枪.jpg" alt="M249轻机枪">
+              </div>
+              <div class="slot-item">
+                <img src="gang/M250通用机枪.jpg" alt="M250通用机枪">
+              </div>
+              <div class="slot-item">
+                <img src="gang/QJB201轻机枪.jpg" alt="QJB201轻机枪">
+              </div>
+              <div class="slot-item">
+                <img src="gang/Mini-14射手步枪.jpg" alt="Mini-14射手步枪">
+              </div>
+              <div class="slot-item">
+                <img src="gang/VSS射手步枪.jpg" alt="VSS射手步枪">
+              </div>
+              <div class="slot-item">
+                <img src="gang/SVD狙击步枪.jpg" alt="SVD狙击步枪">
+              </div>
+              <div class="slot-item">
+                <img src="gang/M14射手步枪.jpg" alt="M14射手步枪">
+              </div>
+              <div class="slot-item">
+                <img src="gang/SKS射手步枪.jpg" alt="SKS射手步枪">
+              </div>
+              <div class="slot-item">
+                <img src="gang/SR-25射手步枪.jpg" alt="SR-25射手步枪">
+              </div>
+              <div class="slot-item">
+                <img src="gang/SR9射手步枪.jpg" alt="SR9射手步枪">
+              </div>
+              <div class="slot-item">
+                <img src="gang/PSG-1射手步枪.jpg" alt="PSG-1射手步枪">
+              </div>
+              <div class="slot-item">
+                <img src="gang/SV-98狙击步枪.jpg" alt="SV-98狙击步枪">
+              </div>
+              <div class="slot-item">
+                <img src="gang/M700狙击步枪.jpg" alt="M700狙击步枪">
+              </div>
+              <div class="slot-item">
+                <img src="gang/R93狙击步枪.jpg" alt="R93狙击步枪">
+              </div>
+              <div class="slot-item">
+                <img src="gang/AWM狙击步枪.jpg" alt="AWM狙击步枪">
+              </div>
+              <div class="slot-item">
+                <img src="gang/沙漠之鹰.jpg" alt="沙漠之鹰">
+              </div>
+              <div class="slot-item">
+                <img src="gang/QSZ92G.jpg" alt="QSZ92G">
+              </div>
+              <div class="slot-item">
+                <img src="gang/357左轮.jpg" alt="357左轮">
+              </div>
+              <div class="slot-item">
+                <img src="gang/G17.jpg" alt="G17">
+              </div>
+              <div class="slot-item">
+                <img src="gang/G18.jpg" alt="G18">
+              </div>
+              <div class="slot-item">
+                <img src="gang/93R.jpg" alt="93R">
+              </div>
+              <div class="slot-item">
+                <img src="gang/M1911.jpg" alt="M1911">
+              </div>
+              <div class="slot-item">
+                <img src="gang/复合弓.jpg" alt="复合弓">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lottery-box">
+          <h2>🪖 头盔</h2>
+          <div class="slot-machine">
+            <div class="slot-container" id="slot3">
+              <div class="slot-item">
+                <img src="head/老式钢盔.jpg" alt="老式钢盔">
+              </div>
+              <div class="slot-item">
+                <img src="head/安保头盔.jpg" alt="安保头盔">
+              </div>
+              <div class="slot-item">
+                <img src="head/奔尼帽.jpg" alt="奔尼帽">
+              </div>
+              <div class="slot-item">
+                <img src="head/户外棒球帽.jpg" alt="户外棒球帽">
+              </div>
+              <div class="slot-item">
+                <img src="head/DRO战术头盔.jpg" alt="DRO战术头盔">
+              </div>
+              <div class="slot-item">
+                <img src="head/H01战术头盔.jpg" alt="H01战术头盔">
+              </div>
+              <div class="slot-item">
+                <img src="head/复古摩托头盔.jpg" alt="复古摩托头盔">
+              </div>
+              <div class="slot-item">
+                <img src="head/H07战术头盔.jpg" alt="H07战术头盔">
+              </div>
+              <div class="slot-item">
+                <img src="head/MC防弹头盔.jpg" alt="MC防弹头盔">
+              </div>
+              <div class="slot-item">
+                <img src="head/防暴头盔.jpg" alt="防暴头盔">
+              </div>
+              <div class="slot-item">
+                <img src="head/DAS防弹头盔.jpg" alt="DAS防弹头盔">
+              </div>
+              <div class="slot-item">
+                <img src="head/MC201防弹头盔.jpg" alt="MC201防弹头盔">
+              </div>
+              <div class="slot-item">
+                <img src="head/D6战术头盔.jpg" alt="D6战术头盔">
+              </div>
+              <div class="slot-item">
+                <img src="head/MHS战术头盔.jpg" alt="MHS战术头盔">
+              </div>
+              <div class="slot-item">
+                <img src="head/DICH训练头盔.jpg" alt="DICH训练头盔">
+              </div>
+              <div class="slot-item">
+                <img src="head/GT1战术头盔.jpg" alt="GT1战术头盔">
+              </div>
+              <div class="slot-item">
+                <img src="head/GN久战重型夜视头盔.jpg" alt="GN久战重型夜视头盔">
+              </div>
+              <div class="slot-item">
+                <img src="head/Mask-1铁壁头盔.jpg" alt="Mask-1铁壁头盔">
+              </div>
+              <div class="slot-item">
+                <img src="head/H09防爆头盔.jpg" alt="H09防爆头盔">
+              </div>
+              <div class="slot-item">
+                <img src="head/DICH-1战术头盔.jpg" alt="DICH-1战术头盔">
+              </div>
+              <div class="slot-item">
+                <img src="head/GN重型头盔.jpg" alt="GN重型头盔">
+              </div>
+              <div class="slot-item">
+                <img src="head/GN重型夜视头盔.jpg" alt="GN重型夜视头盔">
+              </div>
+              <div class="slot-item">
+                <img src="head/任意六级头.jpg" alt="任意六级头">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lottery-box">
+          <h2>🛡️ 护甲</h2>
+          <div class="slot-machine">
+            <div class="slot-container" id="slot4">
+              <div class="slot-item">
+                <img src="body/摩托马甲.jpg" alt="摩托马甲">
+              </div>
+              <div class="slot-item">
+                <img src="body/安保防弹衣.jpg" alt="安保防弹衣">
+              </div>
+              <div class="slot-item">
+                <img src="body/尼龙防弹衣.jpg" alt="尼龙防弹衣">
+              </div>
+              <div class="slot-item">
+                <img src="body/轻型防弹衣.jpg" alt="轻型防弹衣">
+              </div>
+              <div class="slot-item">
+                <img src="body/简易防刺服.jpg" alt="简易防刺服">
+              </div>
+              <div class="slot-item">
+                <img src="body/HT战术背心.jpg" alt="HT战术背心">
+              </div>
+              <div class="slot-item">
+                <img src="body/TG战术防弹衣.jpg" alt="TG战术防弹衣">
+              </div>
+              <div class="slot-item">
+                <img src="body/通用战术背心.jpg" alt="通用战术背心">
+              </div>
+              <div class="slot-item">
+                <img src="body/制式防弹背心.jpg" alt="制式防弹背心">
+              </div>
+              <div class="slot-item">
+                <img src="body/Hvk快拆防弹衣.jpg" alt="Hvk快拆防弹衣">
+              </div>
+              <div class="slot-item">
+                <img src="body/TG-H防弹衣.jpg" alt="TG-H防弹衣">
+              </div>
+              <div class="slot-item">
+                <img src="body/HMP特勤防弹衣.jpg" alt="HMP特勤防弹衣">
+              </div>
+              <div class="slot-item">
+                <img src="body/射手战术背心.jpg" alt="射手战术背心">
+              </div>
+              <div class="slot-item">
+                <img src="body/武士防弹背心.jpg" alt="武士防弹背心">
+              </div>
+              <div class="slot-item">
+                <img src="body/突击手防弹背心.jpg" alt="突击手防弹背心">
+              </div>
+              <div class="slot-item">
+                <img src="body/DT-AVS防弹衣.jpg" alt="DT-AVS防弹衣">
+              </div>
+              <div class="slot-item">
+                <img src="body/精英防弹背心.jpg" alt="精英防弹背心">
+              </div>
+              <div class="slot-item">
+                <img src="body/MK-2战术背心.jpg" alt="MK-2战术背心">
+              </div>
+              <div class="slot-item">
+                <img src="body/Hvk-2防弹衣.jpg" alt="Hvk-2防弹衣">
+              </div>
+              <div class="slot-item">
+                <img src="body/FS复合防弹衣.jpg" alt="FS复合防弹衣">
+              </div>
+              <div class="slot-item">
+                <img src="body/重型突击背心.jpg" alt="重型突击背心">
+              </div>
+              <div class="slot-item">
+                <img src="body/任意六甲.jpg" alt="任意六甲">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="control-section">
+      <button id="startBtn" class="start-btn">🎯 随机装备 🎯</button>
+      <div id="result" class="result"></div>
+    </div>
+
+    <div class="inventory-section">
+      <h2>🎒 获得装备</h2>
+      <div id="inventory" class="inventory-grid"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
